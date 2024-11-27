@@ -1,9 +1,0 @@
-Welcome to mastermind!
-Each game a random code will be generated.
-Your job is to figure out what it is.
-for every guess you will recieve a feedback:
-V - One digit is in a correct position
-* - One digit is in a wrong position
-_ - One digit is wrong
-Think you can crack the code in less
- than 7 attempts? 

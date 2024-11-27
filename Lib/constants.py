@@ -7,18 +7,18 @@ LEFT_CLICK = 1
 MAX_GUESSES = 7
 
 # files
-DIGITAL_FONT_FILE = r"fonts/digital-7.ttf"
-INSTRUCTIONS_FILE = r"texts/instructions.txt"
-M_LOGO_FILE = r"images/m_logo.png"
+DIGITAL_FONT_FILE = r"assets/fonts/digital-7.ttf"
+INSTRUCTIONS_FILE = r"assets/texts/instructions.txt"
+M_LOGO_FILE = r"assets/images/m_logo.png"
 
 SOUNDS_FILE = {
-    "button hover": "sounds/button_hover.wav",
-    "key press": "sounds/key_press.wav",
-    "send guess": "sounds/send_guess.wav",
-    "winning": "sounds/winning.wav",
-    "losing": "sounds/losing.wav",
-    "already guessed": "sounds/already_guessed.wav",
-    "reveal feedback": "sounds/reveal_feedback.wav"
+    "button hover": "assets/sounds/button_hover.wav",
+    "key press": "assets/sounds/key_press.wav",
+    "send guess": "assets/sounds/send_guess.wav",
+    "winning": "assets/sounds/winning.wav",
+    "losing": "assets/sounds/losing.wav",
+    "already guessed": "assets/sounds/already_guessed.wav",
+    "reveal feedback": "assets/sounds/reveal_feedback.wav"
 }
 
 # sound effects
