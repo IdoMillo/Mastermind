@@ -1,0 +1,99 @@
+# --------------------------- Constants
+WINDOW_HEIGHT = 650
+WINDOW_WIDTH = 500
+REFRESH_RATE = 60
+#  num_of_digits = 4  # number of code digits
+LEFT_CLICK = 1
+MAX_GUESSES = 7
+
+# files
+DIGITAL_FONT_FILE = r"fonts/digital-7.ttf"
+INSTRUCTIONS_FILE = r"texts/instructions.txt"
+M_LOGO_FILE = r"images/m_logo.png"
+
+SOUNDS_FILE = {
+    "button hover": "sounds/button_hover.wav",
+    "key press": "sounds/key_press.wav",
+    "send guess": "sounds/send_guess.wav",
+    "winning": "sounds/winning.wav",
+    "losing": "sounds/losing.wav",
+    "already guessed": "sounds/already_guessed.wav",
+    "reveal feedback": "sounds/reveal_feedback.wav"
+}
+
+# sound effects
+BUTTON_HOVER = 0
+KEY_PRESS = 1
+SEND_GUESS = 2
+WINNING = 3
+LOSING = 4
+ALREADY_GUESSED = 5
+REVEAL_FEEDBACK = 6
+
+# Game status
+MAIN_MENU_STATUS = 1
+GAME_STATUS = 2
+SETTINGS_STATUS = 3
+INSTRUCTIONS_STATUS = 4
+
+# buttons list
+START_GAME = 0
+BACK_TO_MENU = 1
+RETRY = 2
+SETTINGS = 3
+CODE_LEN_4 = 4
+CODE_LEN_5 = 5
+CODE_LEN_6 = 6
+DUPLICATES = 7
+WORDLE_MODE = 8
+INSTRUCTIONS = 9
+
+# fonts and sizes
+GAME_FONT = 'Arial'
+DIG_FONT_SIZE = 32
+TEXT_FONT_SIZE = int(0.07*WINDOW_WIDTH)
+INSTRUCTIONS_FONT_SIZE = int(0.7*TEXT_FONT_SIZE)
+HEADER_FONT_SIZE = int(TEXT_FONT_SIZE*1.5)
+
+# game positions
+BACK_TO_MAIN_BUTTON_POS = (int(0.65 * WINDOW_WIDTH), int(0.9 * WINDOW_HEIGHT))
+RETRY_BUTTON_POS = (int(0.1 * WINDOW_WIDTH), int(0.9 * WINDOW_HEIGHT))
+# guess lines
+LINE_Y = 0.2 * WINDOW_HEIGHT
+SENT_GUESS_Y = 0.3 * WINDOW_HEIGHT
+SENT_GUESS_X = 0.1 * WINDOW_WIDTH
+FEEDBACK_X = 0.5 * WINDOW_WIDTH
+LINES_GIRTH = int(0.003*WINDOW_HEIGHT)
+# typer line
+TEXT_CURSOR_LENGTH = DIG_FONT_SIZE
+TEXT_CURSOR_GIRTH = 10
+TEXT_CURSOR_Y = LINE_Y - 5
+TEXT_CURSOR_INTERVAL = 500  # for how long will the cursor blink
+
+
+# main menu positions
+HEADER_TEXT_Y = WINDOW_HEIGHT * 0.1
+MAIN_BUTTONS_X = 0.2 * WINDOW_WIDTH
+START_BUTTON_POS = (MAIN_BUTTONS_X, int(WINDOW_HEIGHT * 0.4))
+SETTINGS_BUTTON_POS = (MAIN_BUTTONS_X, START_BUTTON_POS[1] + DIG_FONT_SIZE*1.5)
+INSTRUCTIONS_BUTTON_POS = (MAIN_BUTTONS_X, START_BUTTON_POS[1] + DIG_FONT_SIZE*3)
+
+# settings positions
+SETTINGS_BUTTON_X = 0.6*WINDOW_WIDTH
+CODE_LEN_TEXT_POS = (MAIN_BUTTONS_X, int(WINDOW_HEIGHT * 0.4))
+CODE_LEN_4_BUTTON_POS = (SETTINGS_BUTTON_X, CODE_LEN_TEXT_POS[1])
+CODE_LEN_5_BUTTON_POS = (CODE_LEN_4_BUTTON_POS[0] + TEXT_FONT_SIZE, CODE_LEN_TEXT_POS[1])
+CODE_LEN_6_BUTTON_POS = (CODE_LEN_5_BUTTON_POS[0] + TEXT_FONT_SIZE, CODE_LEN_TEXT_POS[1])
+DUPLICATES_TEXT_POS = (MAIN_BUTTONS_X, CODE_LEN_TEXT_POS[1] + DIG_FONT_SIZE*1.5)
+DUPLICATES_BUTTON_POS = (SETTINGS_BUTTON_X, DUPLICATES_TEXT_POS[1])
+WORDLE_MODE_TEXT_POS = (MAIN_BUTTONS_X, CODE_LEN_TEXT_POS[1] + DIG_FONT_SIZE * 3)
+WORDLE_MODE_BUTTON_POS = (SETTINGS_BUTTON_X, WORDLE_MODE_TEXT_POS[1])
+
+# instructions positions
+INSTRUCTIONS_TEXT_POS = (0.1*WINDOW_WIDTH, 0.3*WINDOW_HEIGHT)
+
+# Colors
+GREEN = (34, 179, 77)
+BLACK = (0, 0, 0)
+WHITE = (255, 255, 255)
+RED = (255, 0, 0)
